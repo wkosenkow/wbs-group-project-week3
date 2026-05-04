@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Hammersmith+One&display=swap');
+
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   font-family: 'Barlow', sans-serif;
+  border-bottom: 2px solid #eee;
 }
 
 .nav-list {
@@ -31,6 +34,217 @@
   box-sizing: border-box;
 }
 
+/* Global Styles */
+body {
+  font-family: Barlow, sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background-color: #fff;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 .nav-link,
+.logo-text {
+  font-family: 'Hammersmith One', sans-serif;
+  color: #111;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Section Spacing */
+
+section {
+  padding: 20px 10px;
+}
+
+/* Hero Section */
+
+#hero {
+  text-align: center;
+}
+
+.gallery-preview {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.gallery-preview img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#hero h1 {
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 24px;
+  color: #666;
+}
+
+/* About and Portfolio Section */
+
+.split-section {
+  display: flex;
+  align-items: stretch;
+  /* beide Seiten gleich hoch */
+  gap: 60px;
+}
+
+/* 50 / 50 */
+.split-section>div {
+  flex: 1;
+  display: flex;
+}
+
+.split-section .about-text,
+.split-section .portfolio-text {
+  flex-direction: column;
+  justify-content: center;
+  /* vertikal */
+
+  align-items: center;
+  text-align: center;
+}
+
+.split-section .about-image,
+.split-section .portfolio-image {
+  overflow: hidden;
+}
+
+.split-section img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/*Button Styles*/
+
+button,
+.btn {
+  padding: 2% 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+button:hover,
+.btn:hover {
+  background-color: #444;
+}
+
+/* Publication Section */
+
+#publikationen {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.logos img {
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+/* Contact Section */
+
+#kontakt h2 {
+  margin-bottom: 40px;
+}
+
+.kontakt-container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: 'Barlow', sans-serif;
+}
+
+form button {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.kontakt-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Social Media Section */
+
+#social {
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer Styles */
 footer {
   background-color: #fff;
   border-top: 1px solid #ddd;
