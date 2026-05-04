@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <title>Naturfotografie Deutschland</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header class="main-header">
         <nav class="navbar">
             <ul class="nav-list">
@@ -23,14 +24,93 @@
         </nav>
     </header>
 
-  <footer>
-    <div class="footer-links">
-      <a href="#">Privacy Notice</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Cookie Preferences</a>
-    </div>
-    <p class="footer-copy">© 2026 Artist xyz. All rights reserved.</p>
-  </footer>
+    <main>
+        <section id="hero">
+            <div class="gallery-preview">
+                <img src="hero1.jpg" alt="Gallery Preview 1">
+                <img src="hero2.jpg" alt="Gallery Preview 2">
+                <img src="hero3.jpg" alt="Gallery Preview 3">
+            </div>
+            <br>
+            <h1>Naturfotografie in Deutschland</h1>
+            <p>Fine Art & Editorials</p>
+        </section>
+
+        <div class="about-image">
+            <img src="fotograf1.jpg" alt="Portrait Fotograf">
+        </div>
+
+        <section id="about-me">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Text About Me Teaser</p>
+                <a href="about.html">
+                    <button>Mehr erfahren</button>
+                </a>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="portfolio-text">
+                <h2>Portfolio</h2>
+                <p>Text Portfolio Teaser</p>
+                <a href="portfolio.html">
+                    <button>Zum Portfolio</button>
+                </a>
+            </div>
+            <div class="portfolio-image">
+                <img src="portfolio1.jpg" alt="Portfolio Bild 1">
+            </div>
+        </section>
+
+        <section id="publikationen">
+            <h2>Publikationen</h2>
+            <div class="logos">
+                <img src="logo1.png" alt="logo magazin 1">
+                <img src="logo2.png" alt="logo magazin 2">
+                <img src="logo3.png" alt="logo magazin 3">
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <div class="kontakt-container">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" id="telefon" name="telefon">
+                    <label for="nachricht">Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+                    <button type="submit">Senden</button>
+                </form>
+                <div class="kontakt-image placeholder">
+                    <img src="kontakt1.jpg" alt="Kontaktbild">
+                </div>
+            </div>
+        </section>
+
+        <section id="social">
+            <h2>Folge mir auf Social Media</h2>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="tik-tok.png" alt="TikTok"></a>
+                <a href="#"><img src="twitter.png" alt="X (Twitter)"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Notice</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+        <p class="footer-copy">© 2026 Artist xyz. All rights reserved.</p>
+    </footer>
 
 </body>
 
