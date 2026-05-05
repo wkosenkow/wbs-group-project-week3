@@ -507,7 +507,7 @@ footer {
 }
 
 #kontakt.contact-page .kontakt-image {
-  flex: 1;
+  flex: 0 0 25%;
   overflow: hidden;
   border-radius: 12px;
 }
