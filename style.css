@@ -3,10 +3,23 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 10%;
   font-family: 'Barlow', sans-serif;
-  border-bottom: 2px solid #eee;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  z-index: 1000;
 }
 
 .nav-list {
@@ -77,6 +90,7 @@ section {
   display: flex;
   gap: 20px;
   margin-bottom: 10px;
+  padding-top: 10%;
 }
 
 .gallery-preview img {
